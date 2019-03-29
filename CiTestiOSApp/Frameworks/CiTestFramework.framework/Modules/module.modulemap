@@ -1,0 +1,6 @@
+framework module CiTestFramework {
+  umbrella header "CiTestFramework.h"
+
+  export *
+  module * { export * }
+}

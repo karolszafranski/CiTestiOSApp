@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <CiTestFramework/CiTestFramework.h>
 
 @interface ViewController ()
 
@@ -18,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    Functionality* functionality = [Functionality new];
+    self.valueLabel.text = [NSString stringWithFormat:@"%f", functionality.compute];
 }
 
 
